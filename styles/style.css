@@ -9,23 +9,385 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Header */
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  /*margin-bottom: 100px;*/
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  position: absolute;
+  width: 228px;
+  height: 32px;
+  z-index: 1;
+}
+
+.logo__place_header {
+  left: 64px;
+  top: 30px;
+}
+
+.header__title {
+  align-self: center;
+  margin: 0 0 0 64px;
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.header__subtitle {
+  width: 388px;
+  line-height: 25px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  z-index: 1;
+  margin: 0;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+}
+
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* Description */
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.description__two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 0 0;
+  width: 80%;
+}
+
+.description__two-columns_brief {
+  color: #2f80ed;
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.description__two-columns_main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+}
+
+.description__two-columns_paragraph {
+  margin: 0 0 34px 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.description__two-columns_paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.description__two-columns_span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 12px;
+
+}
+
+/*  Digits  */
+
+.digits {
+  margin: 0 0 100px 0;
+}
+
+/*Цифры и факты*/
+.digits__section_title {
+  margin: 0 auto 20px auto;
+  width: 60%;
+  bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*Про учебу и мозг*/
+.digits__section-subtitle {
+  margin: 0 auto 0 auto;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.digits__table {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto 0 auto;
+  list-style: none;
+}
+
+.digits__table_cell {
+  width: 250px;
+  margin: 60px 0 0 0;
+}
+
+.digits__table_heading {
+  margin: 0 0 20px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.digits__table_text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*Метод Фейнмана*/
+
+.feynman {
+  height: 890px;
+  position: relative;
+  background-image: url("../images/feynman.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 867px 637px;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+
+}
+
+/*Выучить и не забыть*/
+.feynman__subtitle {
+  margin: 70px auto 0 auto;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.feynman__link {
+  margin: auto 48px auto auto;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+/*Кауфман*/
+
+.kaufman {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 90px 0 0 90px;
+}
+
+/*Принципы обучения*/
+.section-title__theme_dark {
+  margin: 0 auto 20px auto;
+  width: 60%;
+  bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+
+/*от Джоша Кауфмана*/
+.section-subtitle__theme_dark {
+  margin: 0 auto 0 auto;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+}
+
+.table__theme_dark {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto 90px auto;
+  list-style: none;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.table__heading_theme_dark {
+  margin: 0 0 0 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+.table__text_theme_dark {
+  margin: 0 0 0 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  z-index: 3;
+}
+
+.kaufman__triangle {
+  background-image: url("../images/kaufman-triangle.svg");
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+}
+
+/* Footer */
+.footer {
+  min-height: 350px;
+  background-color: black;
+  padding: 60px 0 40px 0;
+  display: flex;
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+
+.footer__column_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Лого*/
+.logo__place_footer {
+  width: 228px;
+  height: 32px;
+  flex-direction: row;
+  color: white;
+}
+
+/*Автор*/
+.footer__author {
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+/*О Практикуме*/
+.footer__column-heading {
+  color: white;
+  margin: 0 auto 20px auto;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-links {
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: right;
+  display: flex;
+}
+
+.footer__column_content_social {
+
+}
+
+/*Соцсети*/
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
