@@ -115,7 +115,7 @@
   line-height: 34px;
 }
 
-.description__two-columns_paragraph:last-child {
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -225,7 +225,7 @@
 /*Кауфман*/
 
 .kaufman {
-  background-color: #000000;
+  background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -275,7 +275,7 @@
 /* Footer */
 .footer {
   min-height: 350px;
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding: 60px 0 40px 0;
   display: flex;
   box-sizing: border-box;
@@ -313,7 +313,7 @@
 /*О Практикуме*/
 .footer__column-heading {
   color: white;
-  margin: 0 auto 20px auto;
+  margin: 0 0 20px 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -330,6 +330,7 @@
   flex-direction: column;
   justify-content: right;
   display: flex;
+  margin-bottom: 16px;
 }
 
 .footer__column_content_social {
