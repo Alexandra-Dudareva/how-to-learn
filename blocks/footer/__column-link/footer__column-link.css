@@ -4,3 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.footer__column-link:hover {
+  opacity: 0.65;
+  transition: opacity .3s ease-in;
+}
+

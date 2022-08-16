@@ -11,5 +11,5 @@
 
 .feynman__link:hover {
   opacity: 0.65;
-  transition: ease-in;
+  transition: opacity .3s ease-in;
 }
